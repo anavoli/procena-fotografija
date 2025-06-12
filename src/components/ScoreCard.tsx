@@ -4,14 +4,12 @@ interface ScoreCardProps {
   title: string;
   score: number;
   description?: string;
-  color?: 'blue' | 'green' | 'yellow' | 'red';
 }
 
 export const ScoreCard: React.FC<ScoreCardProps> = ({ 
   title, 
   score, 
-  description,
-  color = 'blue'
+  description
 }) => {
   const getScoreColor = (score: number) => {
     if (score >= 8) return 'bg-green-500';
