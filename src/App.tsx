@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FileUpload } from './components/FileUpload';
 import { AnalysisResults } from './components/AnalysisResults';
 import { analyzePhoto } from './services/analysisService';
 import { initializeAI } from './services/realAIService';
 import { PhotoAnalysis } from './types/analysis';
-import { Camera, Loader2, Sparkles, Zap, Brain, Cpu } from 'lucide-react';
+import { Camera, Loader2, Brain, Cpu } from 'lucide-react';
 
 function App() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
